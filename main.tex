@@ -1,0 +1,179 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Beamer Presentation
+% LaTeX Template
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND THEMES
+%----------------------------------------------------------------------------------------
+
+\documentclass[10pt,aspectratio=169]{beamer}
+
+\usetheme{metropolis}
+%\usetheme{default}
+%\usetheme{Madrid}
+%\usetheme{CambridgeUS}
+%\usetheme{Pittsburgh}
+
+%\usecolortheme{orchid}
+%\usecolortheme{seahorse}
+%\usecolortheme{whale}
+
+%\setbeamertemplate{footline}[page number]
+%\setbeamertemplate{navigation symbols}{}
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES
+%----------------------------------------------------------------------------------------
+
+\usepackage{fontspec}
+\usepackage{xeCJK}
+\usepackage{unicode-math}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{lipsum}
+
+%----------------------------------------------------------------------------------------
+%	FONT SETTINGS
+%----------------------------------------------------------------------------------------
+
+\setmainfont{NewComputerModern}[
+    Path=fonts/,
+    Extension=.otf,
+    UprightFont=NewCM10-Regular,
+    BoldFont=NewCM10-Bold,
+    ItalicFont=NewCM10-Italic,
+    BoldItalicFont=NewCM10-BoldItalic,
+    FontFace={l}{n}{Font=NewCM10-Book.otf},
+    FontFace={l}{it}{Font=NewCM10-BookItalic.otf},
+]
+
+\setsansfont{NewComputerModernSans}[
+    Path=fonts/,
+    Extension=.otf,
+    UprightFont=NewCMSans10-Regular,
+    BoldFont=NewCMSans10-Bold,
+    ItalicFont=NewCMSans10-Oblique,
+    BoldItalicFont=NewCMSans10-BoldOblique,
+    FontFace={l}{n}{Font=NewCMSans10-Book.otf},
+    FontFace={l}{it}{Font=NewCMSans10-BookOblique.otf},
+]
+
+\setmathfont{NewCMMath-Regular.otf}[Path=fonts/]
+
+\setCJKmainfont{SourceHanSerifSC-Regular.otf}[
+    Path=fonts/,
+    BoldFont=SourceHanSerifSC-Bold.otf,
+    ItalicFont=ukai.ttc,
+    BoldItalicFont=ukai.ttc,
+    FontFace={l}{n}{Font=SourceHanSerifSC-Light.otf},
+]
+
+\setCJKsansfont{SourceHanSansSC-Regular.otf}[
+    Path=fonts/,
+    BoldFont=SourceHanSansSC-Bold.otf,
+    FontFace={l}{n}{Font=SourceHanSansSC-Light.otf},
+]
+
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\title{A Beamer Presentation Template}
+\subtitle{Using Metropolis Theme}
+\author{Houchen Li}
+\institute{Philipps-Universit\"at Marburg}
+\date{\today}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\maketitle
+
+%----------------------------------------------------------------------------------------
+%	OUTLINE
+%----------------------------------------------------------------------------------------
+
+\begin{frame}{Outline}
+\tableofcontents
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+%	SECTION 1
+%----------------------------------------------------------------------------------------
+
+\section{Introduction}
+
+\begin{frame}{Introduction}
+\lipsum[1][1-5]
+\end{frame}
+
+\begin{frame}{Background}
+\lipsum[2][1-5]
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+%	SECTION 2
+%----------------------------------------------------------------------------------------
+
+\section{Methods}
+
+\begin{frame}{Methods}
+\lipsum[3][1-5]
+\end{frame}
+
+\begin{frame}{Experimental Setup}
+\lipsum[4][1-5]
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+%	SECTION 3
+%----------------------------------------------------------------------------------------
+
+\section{Results}
+
+\begin{frame}{Results}
+\lipsum[5][1-5]
+\end{frame}
+
+\begin{frame}{Analysis}
+\lipsum[6][1-5]
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+%	SECTION 4
+%----------------------------------------------------------------------------------------
+
+\section{Conclusion}
+
+\begin{frame}{Conclusion}
+\lipsum[7][1-5]
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+%	REFERENCES
+%----------------------------------------------------------------------------------------
+
+\begin{frame}[allowframebreaks]{References}
+\footnotesize
+\begin{thebibliography}{99}
+\bibitem[Smith, 2024]{p1} John Smith (2024)
+\newblock Title of the publication
+\newblock \emph{Journal Name} 12(3), 45--678.
+\end{thebibliography}
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+
+\begin{frame}[standout]
+Thank You!
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
